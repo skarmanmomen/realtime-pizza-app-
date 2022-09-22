@@ -11,6 +11,9 @@ app.get("/", (req, res) => {
     res.render("home")
 })
 
+// public folder 
+app.use(express.static("public"))
+
 // set Tempate engine 
 app.use(expressLayout)
 app.set("views", path.join(__dirname, "/resources/views/"))
