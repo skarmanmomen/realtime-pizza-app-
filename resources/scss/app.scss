@@ -45,7 +45,7 @@ section.hero {
   }
 }
 
-.order {
+.btn-primary  {
   background-color: $primary;
   transition: $smooth;
   &:hover{
@@ -55,3 +55,28 @@ section.hero {
 
   }
 }
+.btn {
+  background-color: $primary;
+  transition: $smooth;
+} 
+.cart {
+  background-color: $scondary;
+  .amount {
+    color: $primary;
+  }
+ 
+  
+}
+
+.login  {
+  background-color: $scondary;
+  min-height: calc(100vh - 86px);
+    a {
+    color: $primary;
+    transition: $smooth;
+    &:hover {
+      color: $primary-hover;
+    }
+  }
+}
+ 

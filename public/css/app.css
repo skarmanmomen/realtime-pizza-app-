@@ -38,12 +38,36 @@ section.hero {
   border-color: #fff;
 }
 
-.order {
+.btn-primary {
   background-color: #FE5F1E;
   transition: all 0.3s ease-in-out;
 }
-.order:hover {
+.btn-primary:hover {
   background-color: #b23301;
   color: #fff;
   border-color: #fff;
+}
+
+.btn {
+  background-color: #FE5F1E;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart {
+  background-color: #F8F8F8;
+}
+.cart .amount {
+  color: #FE5F1E;
+}
+
+.login {
+  background-color: #F8F8F8;
+  min-height: calc(100vh - 86px);
+}
+.login a {
+  color: #FE5F1E;
+  transition: all 0.3s ease-in-out;
+}
+.login a:hover {
+  color: #b23301;
 }
