@@ -3,7 +3,14 @@ const app = express()
 const path = require("path")
 const ejs = require("ejs")
 const expressLayout = require("express-ejs-layouts")
+const databse = require("./app/database")
 const PORT = process.env.PORT || 2000
+
+
+
+// database connection
+databse() 
+ 
 
 
 
@@ -16,26 +23,25 @@ app.set("view engine", "ejs")
 app.use(express.static("public"))
 
 
-app.get("/", (req, res) => {
-    res.render("home")
+
+
+//  invok initRoutes way 2
+require("./routes/web")(app)
+
+// route import way 1
+// const route =  require("./routes/routes")
+// app.use(route)
+
+
+app.get("*", (req, res) => {
+    res.render("error")
 })
 
-app.get("/cart", (req, res) => {
-    res.render("customers/cart")
-})
-app.get("/login", (req, res) => {
-    res.render("auth/login")
-})
-app.get("/register", (req, res) => {
-    res.render("auth/register")
-})
 
 
 
 
 
- 
- 
 
 // listening on port 
 app.listen(PORT, (err) => {

@@ -1,0 +1,24 @@
+[
+    
+  
+ 
+    {
+        "_id": {
+            "$oid": "9321fb12331bedc5db5c1866"
+        },
+        "name": "Carbonara",
+        "image": "pizza.png",
+        "price": "200",
+        "size": "small"
+    },
+    ,
+    {
+        "_id": {
+            "$oid": "9321fb12331bedc5db5c1868"
+        },
+        "name": "Carbonara",
+        "image": "pizza.png",
+        "price": "200",
+        "size": "small"
+    }
+]
