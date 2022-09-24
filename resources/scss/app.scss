@@ -1,11 +1,14 @@
 @import "./_variables";
+@import '~noty/src/noty.scss';
+
+@import '~noty/src/themes/mint.scss';
 
 body {
   font-family            : 'Lato', sans-serif;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
   color                  : $dark;
- 
+
 
 }
 
@@ -28,55 +31,68 @@ nav li a {
 section.hero {
   background: $scondary;
 }
-.size{
+
+.size {
   background-color: $scondary;
 }
-.add-to-cart  {
+
+.add-to-cart {
   border: 2px solid $primary;
- 
+
   color: $primary;
- 
+
   transition: $smooth;
-  &:hover{
+
+  &:hover {
     background-color: $primary-hover;
-     color: $pure;
-     border-color: $pure;
+    color           : $pure;
+    border-color    : $pure;
 
   }
 }
 
-.btn-primary  {
+.btn-primary {
   background-color: $primary;
-  transition: $smooth;
-  &:hover{
+  transition      : $smooth;
+
+  &:hover {
     background-color: $primary-hover;
-     color: $pure;
-     border-color: $pure;
+    color           : $pure;
+    border-color    : $pure;
 
   }
 }
+
 .btn {
   background-color: $primary;
-  transition: $smooth;
-} 
+  transition      : $smooth;
+}
+
 .cart {
   background-color: $scondary;
+
   .amount {
     color: $primary;
   }
- 
-  
+
+
 }
 
-.login  {
+.login {
   background-color: $scondary;
-  min-height: calc(100vh - 86px);
-    a {
-    color: $primary;
+  min-height      : calc(100vh - 86px);
+
+  a {
+    color     : $primary;
     transition: $smooth;
+
     &:hover {
       color: $primary-hover;
     }
   }
 }
- 
+
+.noty_theme__mint {
+  border-radius: 50px !important;
+  padding-left : 8px !important;
+}

@@ -9,6 +9,10 @@ const initRoutes = (app) => {
     app.get("/cart", cartController().cart)
     app.get("/login", authController().login)
     app.get("/register", authController().register)
+
+    app.post("/add-cart", cartController().update)
+
+
 }
 
 module.exports = initRoutes
